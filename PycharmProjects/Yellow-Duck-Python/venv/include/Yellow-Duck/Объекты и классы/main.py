@@ -5,6 +5,7 @@ person2 = Person()
 
 person1.set_name('John')
 person1.set_age('27')
+person1.set_address('')
 
 person2.set_name('Mike')
 person2.set_age('34')
