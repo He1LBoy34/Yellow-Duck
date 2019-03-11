@@ -3,6 +3,10 @@ class Person:
     __age = 0
     __address = 'n/a'
 
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
+
     def set_name(self, name):
         self.__name = name
 
@@ -26,3 +30,12 @@ class Person:
         print('/ Hi my name is', self.__name)
         print('/ I am', self.__age,' years old')
         print('/ My address is', self.__address)
+
+    @staticmethod
+    def test_static():
+        print('I am static method')
+
+    @classmethod
+    def test_class(cls):
+        print('I am class method')
+        print(cls.__age)

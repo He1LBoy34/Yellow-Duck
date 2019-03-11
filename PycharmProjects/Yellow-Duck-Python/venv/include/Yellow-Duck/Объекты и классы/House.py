@@ -1,10 +1,13 @@
-from Person import Person
+from Person import *
 
 
 class House:
 
     __address = 'n/a'
     __list_of_residents = ['n/a']
+
+    def __init__(self, address):
+        self.__address = address
 
     def set_address(self, address):
         self.__address = address
@@ -23,4 +26,8 @@ class House:
 
     def description_of_house(self):
         print('---------------------')
-        print('')
+        print('Address of this house is', self.__address)
+        print('# List of residents: ')
+        for p in self.__list_of_residents:
+            if isinstance(p, Person):
+                print('# - ', p.name())
