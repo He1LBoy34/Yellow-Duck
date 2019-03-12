@@ -12,4 +12,4 @@ class Programmer(Person):
 
     def description_of_person(self):
         super().description_of_person()
-        print('/ I am programmer and my experience ', self.__prog_exp)
+        print('/ I am programmer and my experience ', self.__prog_exp, 'years')
